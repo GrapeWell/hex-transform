@@ -3,7 +3,7 @@
   "displayName": "hex-transform",
   "publisher": "sickhack",
   "description": "A VS Code extension that supports the conversion between color formats such as HEX, RGBA, and HSL",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "icon.png",
   "repository": {
     "type": "git",
