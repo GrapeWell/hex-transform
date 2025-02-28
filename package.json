@@ -2,7 +2,7 @@
   "name": "hex-transform",
   "displayName": "hex-transform",
   "publisher": "sickhack",
-  "description": "",
+  "description": "A VS Code extension that supports the conversion between color formats such as HEX, RGBA, and HSL",
   "version": "0.0.2",
   "icon": "icon.png",
   "repository": {
@@ -20,21 +20,23 @@
   "contributes": {
     "commands": [
       {
-        "command": "hex-transform.transform",
-        "title": "Hex to RGBA"
+        "command": "hex-transform.detectAndShowMenu",
+        "title": "Convert color formats..."
       }
     ],
     "keybindings": [
       {
-        "key": "cmd+shift+d",
-        "command": "hex-transform.transform"
+        "key": "cmd+shift+c",
+        "command": "hex-transform.detectAndShowMenu",
+        "when": "editorTextFocus"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "hex-transform.transform",
-          "when": "editorTextFocus"
+          "command": "hex-transform.detectAndShowMenu",
+          "when": "editorTextFocus",
+          "group": "hex-transform@0"
         }
       ]
     }
